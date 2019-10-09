@@ -1,7 +1,11 @@
 class UserModel {
   constructor(user) {
     Object.assign(this, user);
-    console.log(JSON.stringify(this));
+  }
+  getFullAddress() {
+    /** @member {{city: string, street: string, zipcode: string, suite: string}} address */
+    const { address } = this;
+    return `${address.city}, ${address.street}, ${address.suite} ${address.zipcode}`
   }
 }
 

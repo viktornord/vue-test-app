@@ -3,10 +3,10 @@
         <div class="card-body">
             <h5 class="card-title">{{user.name}}</h5>
             <ul class="contact-info">
-                <li><span>Email: <a :href="`mailto:${user.email}`">{{user.email}}</a></span></li>
-                <li><address><p>{{userAddress}}</p></address></li>
+                <li><span>Email: <a :href="emailLink">{{user.email}}</a></span></li>
+                <li><address><p>{{user.getFullAddress()}}</p></address></li>
                 <li><span>Phone: {{user.phone}}</span></li>
-                <li><span>Website: <a :href="`http://${user.website}`" target="_blank" class="link">{{user.website}}</a></span></li>
+                <li><span>Website: <a :href="webSiteLink" target="_blank" class="link">{{user.website}}</a></span></li>
             </ul>
         </div>
     </div>
@@ -21,10 +21,11 @@
       user: UserModel,
     },
     computed: {
-      userAddress() {
-        /** @member {{city: string, street: string, zipcode: string, suite: string}} address */
-        const { address } = this.user;
-        return `${address.city}, ${address.street}, ${address.suite} ${address.zipcode}`
+      webSiteLink() {
+        return `http://${this.user.website}`;
+      },
+      emailLink() {
+        return `mailto:${this.user.email}`;
       }
     }
   };
