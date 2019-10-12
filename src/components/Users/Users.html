@@ -11,9 +11,11 @@
 <!--        <v-radio :label="'Male'" :value="'male'"></v-radio>-->
 <!--        <v-radio :label="'Female'" :value="'female'"></v-radio>-->
 <!--    </v-radio-group>-->
-    <ul class="users-list">
-        <li v-for="user in users" :key="user.id">
-            <User :user="user"></User>
-        </li>
-    </ul>
+    <Scrollable>
+        <ul class="users-list">
+            <li v-for="user in users" :key="user.id">
+                <User :user="user"></User>
+            </li>
+        </ul>
+    </Scrollable>
 </div>

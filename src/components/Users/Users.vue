@@ -3,12 +3,14 @@
 
 <script>
   import User from './User/User';
+  import Scrollable from '@/components/Scrollable/Scrollable';
   import { userService } from '@/services/userService';
 
   export default {
     name: 'Users',
     components: {
       User,
+      Scrollable,
     },
     data() {
       return {
