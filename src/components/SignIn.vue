@@ -15,3 +15,11 @@
     },
   };
 </script>
+
+<style scoped>
+    #google-signin-button {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+</style>

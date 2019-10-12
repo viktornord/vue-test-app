@@ -9,3 +9,9 @@
 .users-list li:first-line {
     margin-left: 0;
 }
+.gender-filter {
+    margin: 1em 0;
+}
+.gender-filter label {
+    margin: 0 .5em;
+}

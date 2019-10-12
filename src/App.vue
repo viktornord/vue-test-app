@@ -4,10 +4,10 @@
             <v-btn depressed small @click="signOut">Sign Out</v-btn>
             <Users></Users>
         </template>
-        <p v-else>
+        <template v-else>
             Sign in to see user list
             <SignIn class="m-auto" @onSignIn="onSignIn"></SignIn>
-        </p>
+        </template>
     </div>
 </template>
 
