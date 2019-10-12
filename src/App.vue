@@ -1,27 +1,29 @@
 <template>
-  <div id="app">
-    <Users></Users>
-  </div>
+    <div id="app">
+<!--        <SignIn></SignIn>-->
+        <Users></Users>
+    </div>
 </template>
 
 <script>
-import Users from './components/Users'
+  // import SignIn from '@/components/SignIn/SignIn';
+  import Users from '@/components/Users';
 
-export default {
-  name: 'app',
-  components: {
-    Users
-  }
-}
+  export default {
+    name: 'app',
+    components: {
+      Users,
+    },
+  };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
 </style>
