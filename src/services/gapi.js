@@ -1,6 +1,10 @@
 class GoogleApi {
   #gapi = window.gapi;
 
+  get authInstance() {
+    return this.#gapi.auth2.getAuthInstance();
+  }
+
   renderSignInButton($elId) {
     let onSuccess = () => {};
     this.#gapi.signin2.render($elId, {
@@ -10,7 +14,6 @@ class GoogleApi {
       onSuccess: (cb) => onSuccess = cb,
     };
   }
-
 }
 
 export const googleAPI = new GoogleApi();
