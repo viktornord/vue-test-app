@@ -1,0 +1,11 @@
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.users-list li {
+    margin: 0 0 2em 2em;
+}
+.users-list li:first-line {
+    margin-left: 0;
+}

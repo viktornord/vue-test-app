@@ -1,0 +1,9 @@
+<v-card outlined>
+    <v-card-title>{{user.name}}</v-card-title>
+    <ul class="contact-info">
+        <li><v-card-text><span>Email: <a :href="emailLink">{{user.email}}</a></span></v-card-text></li>
+        <li><v-card-text><address><p>{{user.getFullAddress()}}</p></address></v-card-text></li>
+        <li><v-card-text><span>Phone: {{user.phone}}</span></v-card-text></li>
+        <li><v-card-text><span>Website: <a :href="webSiteLink" target="_blank" class="link">{{user.website}}</a></span></v-card-text></li>
+    </ul>
+</v-card>

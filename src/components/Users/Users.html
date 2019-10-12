@@ -1,0 +1,8 @@
+<div>
+    <h1>Users</h1>
+    <ul class="users-list">
+        <li v-for="user in users" :key="user.id">
+            <User :user="user"></User>
+        </li>
+    </ul>
+</div>

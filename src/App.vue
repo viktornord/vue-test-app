@@ -7,7 +7,7 @@
 
 <script>
   // import SignIn from '@/components/SignIn/SignIn';
-  import Users from '@/components/Users';
+  import Users from '@/components/Users/Users';
 
   export default {
     name: 'app',
