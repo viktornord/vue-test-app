@@ -1,5 +1,15 @@
 <div>
     <h1>Users</h1>
+    <div>
+        <label><input type="radio" name="gender" v-model="filter.gender"> All</label>
+        <label><input type="radio" name="gender" value="male" v-model="filter.gender"> Male</label>
+        <label><input type="radio" name="gender" value="female" v-model="filter.gender"> Female</label>
+    </div>
+<!--    <v-radio-group :model="filter.gender">-->
+<!--        <v-radio :label="'All'"></v-radio>-->
+<!--        <v-radio :label="'Male'" :value="'male'"></v-radio>-->
+<!--        <v-radio :label="'Female'" :value="'female'"></v-radio>-->
+<!--    </v-radio-group>-->
     <ul class="users-list">
         <li v-for="user in users" :key="user.id">
             <User :user="user"></User>

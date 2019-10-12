@@ -12,11 +12,23 @@
     },
     data() {
       return {
+        filter: {
+          gender: null
+        },
         users: [],
       };
     },
+    watch: {
+      filter: {
+        deep: true,
+        handler({ gender: filterGender }) {
+          this.users = this.allUsers.filter(({ gender }) => !filterGender || gender === filterGender);
+        }
+      }
+    },
     async mounted() {
-      this.users = await userService.getUsers();
+      this.allUsers = await userService.getUsers();
+      this.users = [...this.allUsers];
     },
   };
 </script>

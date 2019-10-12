@@ -1,8 +1,14 @@
 import Vue from 'vue';
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css'
+import Vuetify, {
+  VCard, VCardTitle, VCardText,
+} from 'vuetify/lib';
+import 'vuetify/dist/vuetify.min.css';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+  components: {
+    VCard, VCardTitle, VCardText,
+  }
+});
 
 const opts = {};
 
