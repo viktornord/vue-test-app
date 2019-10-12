@@ -1,5 +1,5 @@
 <template src="./User.html"></template>
-<style scoped src="User.css"></style>
+<style scoped src="./User.css"></style>
 
 <script>
   import { UserModel } from '@/models/User';

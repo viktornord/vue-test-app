@@ -1,5 +1,5 @@
-<template src="./Users/html"></template>
-<style scoped src="Users.css"></style>
+<template src="./Users.html"></template>
+<style scoped src="./Users.css"></style>
 
 <script>
   import User from './User/User';
