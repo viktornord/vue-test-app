@@ -3,7 +3,7 @@
 
 <script>
   import User from './User/User';
-  import { UserModel } from '../../models/User';
+  import { userService } from '@/services/userService';
 
   export default {
     name: 'Users',
@@ -16,8 +16,7 @@
       };
     },
     async mounted() {
-      const rawUsers = await fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json());
-      this.users = rawUsers.map(user => new UserModel(user));
+      this.users = await userService.getUsers();
     },
   };
 </script>
