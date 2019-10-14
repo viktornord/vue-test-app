@@ -1,0 +1,17 @@
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.users-list li {
+    margin: 0 0 2em 2em;
+}
+.users-list li:first-line {
+    margin-left: 0;
+}
+.gender-filter {
+    margin: 1em 0;
+}
+.gender-filter label {
+    margin: 0 .5em;
+}

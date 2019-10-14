@@ -1,4 +1,4 @@
-# vue-test-cinema
+# vue-test
 
 ## Project setup
 ```
